@@ -5,7 +5,7 @@ Disaster Respoense Robot based on Raspberry Pi &amp; Python
 
 필요한 라이브러리들 먼저 설치
 
-$ sudo apt-get install git cmake libjpeg8-dev imagemagick libv4l-dev subversion -y
+	$ sudo apt-get install git cmake libjpeg8-dev imagemagick libv4l-dev subversion -y
 
 빌드에 필요한 videodev.h 파일이 없으므로 videodev2.h 파일로 연결
 
