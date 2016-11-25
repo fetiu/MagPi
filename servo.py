@@ -2,7 +2,6 @@ import RPi.GPIO as GPIO
 import curses
 from curses import endwin
 
-
 stdscr = curses.initscr()
 
 curses.cbreak()
