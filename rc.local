@@ -18,12 +18,11 @@ if [ "$_IP" ]; then
 fi
 
 #User add line
-sudo vncserver -geometry 1280x720
-python /home/pi/my_python/camera_capture.py &
+python /home/pi/magpi/camera_capture.py &
 LD_LIBRARY_PATH=/usr/local/lib mjpg_streamer \
-	-i "input_file.so -f home/pi/my_python/images/tmp -n stream.jpg" \
+	-i "input_file.so -f home/pi/magpi/images/tmp -n stream.jpg" \
 	-o "output_http.so -w /usr/local/www -p 5678" &
  
-python /home/pi/my_python/magpi_server.py &
+python /home/pi/magpi/magpi_server.py &
 
 exit 0
